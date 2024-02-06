@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    button * {
+        @apply pointer-events-none;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply inline-flex items-center justify-center px-4 py-2 font-semibold font-serif duration-300;
+        &-primary {
+            @apply rounded-full bg-blue-500 text-white shadow-md hover:bg-blue-600 hover:shadow-sm hover:-translate-y-0.5;
+        }
+        &-black {
+            @apply rounded-full bg-neutral-900 text-white shadow-md hover:bg-blue-900;
+        }
+    }
+
+    .form-input {
+        @apply border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
+        &[type='checkbox'] {
+            @apply rounded;
+        }
+        &:not([type="radio"]):not([type='checkbox']) {
+            @apply rounded-md;
+        }
+    }
+}
