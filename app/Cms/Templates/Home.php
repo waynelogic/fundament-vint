@@ -40,13 +40,6 @@ class Home extends AbstractTemplate
                         ->required(),
                     Forms\Components\FileUpload::make('image')
                 ])->columns(2),
-
-
-                Forms\Components\Repeater::make('why_us')->schema([
-
-                    Forms\Components\TextInput::make('title')->required(),
-                    Forms\Components\FileUpload::make('image')->required(),
-                ])->columns(2)->label('Почему мы?')->minItems(4),
             ])
         ];
     }

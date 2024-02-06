@@ -22,9 +22,9 @@
         <div class="container text-white pt-24 sm:pt-28 lg:pt-36">
             <div class="mx-auto mb-20">
                 <h2 class="text-xl leading-8 md:text-3xl md:leading-10 font-semibold font-serif mb-6">
-                    {{ $content->hero_title  }}
+                    {!! $content->hero_title !!}
                 </h2>
-                <p class="mb-10">{{ $content->hero_text  }}</p>
+                <p class="mb-10">{!! $content->hero_text !!}</p>
                 <button class="btn btn-primary py-3 px-5" onclick="window.myDialog.showModal()">
                     <x-heroicon-o-calculator class="w-6 h-6 mr-4"/>
                     Получить расчет и смету
