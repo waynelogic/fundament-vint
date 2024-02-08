@@ -12,9 +12,10 @@
         <!-- Styles -->
         @vite('resources/css/app.css')
     </head>
-    <body class="antialiased">
-        @include('common.header')
-        <main>
+    <body class="flex flex-col min-h-screen">
+        <x-header/>
+{{--        @include('common.header')--}}
+        <main class="grow">
             @yield('content')
         </main>
         @include('common.footer')

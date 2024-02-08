@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PageController;
+use App\Http\Controllers;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,5 +25,5 @@ Route::any('/test', function () {
     ]);
 });
 
-Route::any('{slug?}', PageController::class)
+Route::any('{slug?}', Controllers\PageController::class)
     ->where('slug', '(.*)?');

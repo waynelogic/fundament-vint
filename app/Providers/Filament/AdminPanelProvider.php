@@ -18,6 +18,7 @@ use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Waynelogic\FilamentCms\FilamentCmsPlugin;
+use Waynelogic\MagicForms\MagicFormsPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -53,7 +54,8 @@ class AdminPanelProvider extends PanelProvider
                 DispatchServingFilamentEvent::class,
             ])
             ->plugins([
-                new FilamentCmsPlugin()
+                new FilamentCmsPlugin(),
+                new MagicFormsPlugin()
             ])
             ->authMiddleware([
                 Authenticate::class,

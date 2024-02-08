@@ -1,5 +1,11 @@
 import './bootstrap';
 
+import Alpine from 'alpinejs'
+
+window.Alpine = Alpine
+
+Alpine.start()
+
 axios.get(window.location.href, {
     headers: {
         'Method': 'onGetData',
