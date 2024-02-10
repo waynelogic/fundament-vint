@@ -9,14 +9,20 @@ use Waynelogic\MagicForms\Mail\ContactFormAdmin;
 use Waynelogic\MagicForms\Models\FormRecord;
 class MagicFormsController extends BaseController
 {
-    public function index(Request  $request) {
+    public function onSendForm(Request  $request) {
 
-        $validator = $request->validator;
+        $validators =  config('magicforms.validators');
+        $data = $request->all();
+        $validator = $data['validator'];
 
-        if (!empty($validator) and isset(config('magicforms.validators')[$validator])) {
-            $validated = $request->validate(config('magicforms.validators')[$validator]);
+        if (!empty($validator) and isset($validators[$validator])) {
+            unset($data['validator']);
+
+            $validated = $request->validate($validators[$validator]);
+            dd(2);
+
         };
-        dd(1);
+
 
         $data = $request->all();
         unset($data['_token']);

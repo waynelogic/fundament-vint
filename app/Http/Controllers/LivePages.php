@@ -1,21 +1,34 @@
 <?php
 
-namespace App\View\Components;
+namespace App\Http\Controllers;
 
-use Closure;
-use Illuminate\Contracts\View\View;
-use Illuminate\View\Component;
+use Livewire\Component;
+use Waynelogic\FilamentCms\Models\Page;
 
-class  Header extends Component
+class LivePages extends Component
 {
-    public $headerNavbar;
+    public Page $page;
 
-    /**
-     * Create a new component instance.
-     */
-    public function __construct()
+    public object $content;
+
+
+    public function render()
     {
-        $this->headerNavbar = $this->headerNavbar();
+        $url = request()->path();
+        if ($url === ' ' or $url === '') {
+            $url = '/';
+        }
+
+        $page = Page::where('url', $url)->first();
+        if (!$page or empty($page->view)) {
+            abort(404);
+        }
+
+        $this->page = $page;
+        $this->content = json_decode(json_encode($page->content));
+
+
+        return view('home')->extends('layouts.app');
     }
 
     private function headerNavbar() : array
@@ -46,13 +59,5 @@ class  Header extends Component
                 'url' => '/'
             ],
         ];
-    }
-
-    /**
-     * Get the view / contents that represent the component.
-     */
-    public function render(): View|Closure|string
-    {
-        return view('components.header');
     }
 }

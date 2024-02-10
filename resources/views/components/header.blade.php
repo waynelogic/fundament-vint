@@ -4,9 +4,9 @@
         <img width="100px" src="https://vint-fundament.ru/assets/images/logo-white.png" alt="">
         <nav class="max-lg:grid max-lg:grid-rows-[0fr] group-[.menu-opened]:grid-rows-[1fr] max-lg:order-last max-lg:w-full duration-300">
             <div class="overflow-hidden">
-                @if(isset($header_navbar))
+                @if(isset($headerNavbar))
                     <ul class="flex items-center text-sm max-lg:flex-col max-lg:space-y-1 max-lg:mt-4 max-lg:mb-2 lg:space-x-4">
-                        @foreach($header_navbar as $obItem)
+                        @foreach($headerNavbar as $obItem)
                             <li class="max-md:w-full">
                                 <a class="inline-flex w-full max-md:border max-md:rounded-lg max-md:p-2 duration-300 hover:text-blue-300" href="#">{{ $obItem->title }}</a>
                             </li>
