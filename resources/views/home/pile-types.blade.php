@@ -46,7 +46,8 @@
                                 <img class="w-[150px]" src="https://vint-fundament.ru/assets/images/svaya-svs-1.png" alt="">
                             </div>
                             <div>
-                                <h2><strong>Винтовая свая ∅ {{ $obItem->title }} мм. Область применения.</strong></h2>
+                                <h2 class="font-bold text-2xl mb-2 border-b">Винтовая свая ∅ {{ $obItem->title }} мм.</h2>
+                                <h2><strong>Область применения.</strong></h2>
                                 <ul>
                                     <li>
                                         заборы с сеткой-рабицей;</li>
@@ -80,6 +81,12 @@
                                     <li>
                                         экономичность.</li>
                                 </ul>
+                                <div class="border-t py-2">
+                                    <button class="btn btn-primary py-3 px-5" onclick="window.myDialog.showModal()">
+                                        <x-heroicon-o-calculator class="w-6 h-6 mr-4"/>
+                                        Заказать
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </details>

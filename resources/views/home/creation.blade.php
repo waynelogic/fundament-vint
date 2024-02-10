@@ -1,4 +1,4 @@
-<section id="installation">
+<section id="creation">
     <div class="container py-12">
         <h3 class="text-sm title-font text-gray-500 tracking-widest">Услуги по монтажу</h3>
         <h2 class="text-3xl font-serif font-semibold mb-6">Производство и установка винтовых свай</h2>

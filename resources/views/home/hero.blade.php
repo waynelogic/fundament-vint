@@ -1,15 +1,18 @@
 @php($arHeaderServices = [
     (object) [
-        'title' => 'Исследование грунта ',
-        'image' => 'https://iziskania.com/sites/default/files/paragraph/text-image/real_1570790268_0.jpg'
+        'title' => 'Производство и установка винтовых свай',
+        'image' => 'https://bsg-i.nbxc.com/product/b8/31/cb/a29bcc93df87eb2b8745528c3f.jpg@95Q.webp',
+        'url' => '#creation'
     ],
     (object) [
-        'title' => 'Производство и установка винтовых свай',
-        'image' => 'https://bsg-i.nbxc.com/product/b8/31/cb/a29bcc93df87eb2b8745528c3f.jpg@95Q.webp'
+        'title' => 'Исследование грунта ',
+        'image' => 'https://iziskania.com/sites/default/files/paragraph/text-image/real_1570790268_0.jpg',
+        'url' => '#soil-research'
     ],
     (object) [
         'title' => 'Монтаж металлоконструкций',
-        'image' => 'images/home/monage.png'
+        'image' => 'images/home/monage.png',
+        'url' => '#installation'
     ],
 ])
 
@@ -30,7 +33,7 @@
         </div>
         <div class="grid md:grid-cols-3 gap-6 py-0">
             @foreach($arHeaderServices as $obItem)
-                <a href="#" class="group relative w-full rounded-t-xl overflow-hidden shadow-2xl shadow-black border-b-2 border-blue-500 isolate duration-300 hover:border-white">
+                <a href="{{ $obItem->url }}" class="group relative w-full rounded-t-xl overflow-hidden shadow-2xl shadow-black border-b-2 border-blue-500 isolate duration-300 hover:border-white">
                     <img class="absolute w-full h-full object-cover object-center z-[-2] duration-500 group-hover:scale-105" src="{{ $obItem->image }}" alt="">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-black/10 z-[-1]"></div>
                     <div class="p-6 pt-40 group-hover:text-blue-500 duration-300">

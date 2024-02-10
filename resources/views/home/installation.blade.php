@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             @foreach($arInstallation as $obItem)
                 <div class="">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
