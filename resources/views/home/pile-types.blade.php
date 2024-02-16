@@ -41,7 +41,7 @@
                         <summary class="group-open:text-blue-500 md:hidden group p-4 border-b last:border-0 font-serif font-semibold">
                             <span class="group-[.active]:text-blue-500">{{ $obItem->title }}</span>
                         </summary>
-                        <div class="flex p-6">
+                        <div class="flex max-lg:flex-col p-6">
                             <div class="shrink-0 mr-4">
                                 <img class="w-[150px]" src="https://vint-fundament.ru/assets/images/svaya-svs-1.png" alt="">
                             </div>

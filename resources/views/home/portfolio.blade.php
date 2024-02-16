@@ -5,7 +5,7 @@
             <a href="" class="font-serif font-semibold text-blue-500">Посмотреть все</a>
         </div>
         <p class="mb-4">Наши работы, это без пиздежа - лучшее творение человечества! Так что бери и не выёбывайся!</p>
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             @for ($i = 1; $i <= 3; $i++)
                 <a href="#" class="group bg-white rounded-2xl overflow-hidden shadow">
                     <div class="relative isolate overflow-hidden ">

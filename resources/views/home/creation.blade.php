@@ -2,7 +2,7 @@
     <div class="container py-12">
         <h3 class="text-sm title-font text-gray-500 tracking-widest">Услуги по монтажу</h3>
         <h2 class="text-3xl font-serif font-semibold mb-6">Производство и установка винтовых свай</h2>
-        <div class="grid grid-cols-2 gap-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div class="w-full">
                 <div x-data="{ activeTab: 1 }">
                     <div class="flex mb-4 *:flex-grow *:border-b-2 *:border-gray-300 *:py-2 *:text-lg *:px-1 *:duration-150">

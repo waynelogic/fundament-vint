@@ -1,6 +1,6 @@
 <section>
     <div class="container py-12">
-        <div class="grid grid-cols-2 gap-10" id="soil-research">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10" id="soil-research">
             <div>
                 <h3 class="text-sm title-font text-gray-500 tracking-widest">Услуги по геологическому исследованию грунта</h3>
                 <h2 class="text-3xl font-serif font-semibold mb-4">Исследование грунтов</h2>
@@ -23,8 +23,8 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-10 pt-12" id="installation">
-            <div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 pt-12" id="installation">
+            <div class="max-lg:order-last">
                 <img class="rounded-3xl shadow-lg" src="images/home/monage.png" alt="">
             </div>
             <div>
