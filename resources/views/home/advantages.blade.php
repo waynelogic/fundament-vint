@@ -40,8 +40,8 @@
 
 @php($arAdvantages = [
     (object) [
-        'title' => 'Работаем без предоплаты <br>за монтаж',
-        'image' => 'https://vint-fundament.ru/assets/images/calculation.png'
+        'title' => 'Собственное <br>производство',
+        'image' => 'https://vint-fundament.ru/assets/images/welding.png'
     ],
     (object) [
         'title' => 'Гарантия <br>до 10 лет',
@@ -52,28 +52,10 @@
         'image' => 'https://vint-fundament.ru/assets/images/calculation.png'
     ],
     (object) [
-        'title' => 'Поставка и монтаж <br>в кратчайшие сроки',
-        'image' => 'https://vint-fundament.ru/assets/images/fast3.png'
+        'title' => 'Более 300 объектов с 2017 года',
+        'image' => 'https://vint-fundament.ru/assets/images/welding.png'
     ],
 ])
-
-{{--        <section class="relative">--}}
-{{--            <img class="absolute object-center h-full right-0 w-3/4" src="images/home/city.png" alt="">--}}
-{{--            <img class="absolute h-full top-0 right-0" src="images/home/screw_piles.png" alt="">--}}
-{{--            <div class="container py-12">--}}
-{{--                <h2 class="text-3xl font-serif font-semibold mb-6">Почему выбирают Винт Фундамент?</h2>--}}
-{{--                <div class="grid grid-cols-2">--}}
-{{--                    <div class="grid lg:grid-cols-2 gap-10 text-center">--}}
-{{--                        @foreach($arAdvantages as $obItem)--}}
-{{--                            <div class="flex flex-col items-center bg-white p-4 border-2 border-gray-900/20 rounded-xl">--}}
-{{--                                <img width="40px" src="{{ $obItem->image }}" alt="">--}}
-{{--                                <div class="font-serif text-[13px]">{!! $obItem->title !!}</div>--}}
-{{--                            </div>--}}
-{{--                        @endforeach--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
 
 <section class="relative">
     <img class="absolute object-center h-full right-0 w-3/4" src="images/home/city.png" alt="">

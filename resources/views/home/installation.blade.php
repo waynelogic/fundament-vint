@@ -23,8 +23,8 @@
                 <div class="w-24 h-full bg-blue-500"></div>
             </div>
             <div>
-                <h3 class="text-sm title-font text-gray-500 tracking-widest">Услуги по монтажу</h3>
-                <h2 class="text-lg lg:text-3xl font-serif font-semibold mb-4">Монтаж металлоконструкций</h2>
+{{--                <h3 class="text-sm title-font text-gray-500 tracking-widest">Услуги по монтажу</h3>--}}
+                <h2 class="text-lg lg:text-3xl font-serif font-semibold mb-4">Cобственная профессиональная техника</h2>
                 <p>Монтаж винтовых свай выполняем собственной профессиональной техникой</p>
             </div>
         </div>

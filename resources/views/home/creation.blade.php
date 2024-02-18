@@ -7,11 +7,9 @@
                 <div x-data="{ activeTab: 1 }">
                     <div class="flex mb-4 *:flex-grow *:border-b-2 *:border-gray-300 *:py-2 *:text-lg *:px-1 *:duration-150">
                         <button @click="activeTab = 1" :class="{ 'active': activeTab === 1 }"
-                                class="[&.active]:text-blue-600 [&.active]:border-blue-600">Описание</button>
+                                class="[&.active]:text-blue-600 [&.active]:border-blue-600">Производство</button>
                         <button @click="activeTab = 2" :class="{ 'active': activeTab === 2 }"
-                                class="[&.active]:text-blue-600 [&.active]:border-blue-600">Цены</button>
-                        <button @click="activeTab = 3" :class="{ 'active': activeTab === 3 }"
-                                class="[&.active]:text-blue-600 [&.active]:border-blue-600">Еще что-то</button>
+                                class="[&.active]:text-blue-600 [&.active]:border-blue-600">Установка</button>
                     </div>
                     <div :class="{ 'hidden': activeTab !== 1 }">
                         <p class="leading-relaxed mb-4">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam inxigo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean.</p>
@@ -40,6 +38,26 @@
                 </div>
             </div>
             <div class="">
+
+{{--                <div class="swiper" data-lazy="usageSlider">--}}
+{{--                    <!-- Additional required wrapper -->--}}
+{{--                    <div class="swiper-wrapper">--}}
+{{--                        <!-- Slides -->--}}
+{{--                        <div class="swiper-slide">Slide 1</div>--}}
+{{--                        <div class="swiper-slide">Slide 2</div>--}}
+{{--                        <div class="swiper-slide">Slide 3</div>--}}
+{{--                        <div class="swiper-slide">Slide 3</div>--}}
+{{--                        <div class="swiper-slide">Slide 3</div>--}}
+{{--                        <div class="swiper-slide">Slide 3</div>--}}
+{{--                        ...--}}
+{{--                    </div>--}}
+{{--                    <!-- If we need pagination -->--}}
+{{--                    <div class="swiper-pagination"></div>--}}
+
+{{--                    <!-- If we need navigation buttons -->--}}
+{{--                    <div class="swiper-button-prev"></div>--}}
+{{--                    <div class="swiper-button-next"></div>--}}
+{{--                </div>--}}
 
                 <div class="grid lg:grid-cols-2 gap-4">
                     @for ($i = 1; $i <= 4; $i++)

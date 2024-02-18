@@ -6,13 +6,13 @@ window.Alpine = Alpine
 
 Alpine.start()
 
-axios.get(window.location.href, {
-    headers: {
-        'Method': 'onGetData',
-    }
-})
-    .then((res) => console.log(res.data))
-    .catch((err) => console.error(err));
+// axios.get(window.location.href, {
+//     headers: {
+//         'Method': 'onGetData',
+//     }
+// })
+//     .then((res) => console.log(res.data))
+//     .catch((err) => console.error(err));
 
 
 
@@ -25,6 +25,7 @@ const arDynamicScripts =  {
     modal: (object) => import('./components/modal').then(({ default: init }) => init(object)),
     accordion: (object) => import('./components/accordion').then(({ default: init }) => init(object)),
     slider: (object) => import('./components/swiper-slider').then(({ default: init }) => init(object)),
+    usageSlider: (object) => import('./components/usage-slider').then(({ default: init }) => init(object)),
     header: (object) => import('./components/header').then(({ default: init }) => init())
 }
 

@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Grid } from 'swiper/modules';
 export default function init($element) {
     let defOptions =  {
         modules: [Navigation, Pagination],
@@ -17,7 +17,11 @@ export default function init($element) {
 
     let params = Object.keys(dataOptions).reduce((result, key) => {
         if (key !== 'lazy') {
+            if (key === 'rows') {
+
+            }
             result[key] = dataOptions[key];
+            console.log(result)
         }
         return result;
     }, {});
