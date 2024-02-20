@@ -3,7 +3,7 @@
         <div class="relative text-white rounded-2xl overflow-hidden">
             <img class="absolute w-full h-full object-center object-cover grayscale z-[-2]" src="https://screw-piles.com/thumb/2/0ow_7i4I5l9IsPcfbqkxGw/r/d/55029793_2.jpg" alt="">
             <div class="absolute inset-0 bg-blue-500/80 z-[-1]"></div>
-            <form class="p-6 md:p-12" method="POST" action="{{ route('magic-forms')  }}">
+            <form class="p-6 md:p-12" method="POST" action="{{ route('magic-forms') }}">
                 <input type="hidden" name="form" value="main">
                 <h2 class="text-3xl font-serif font-semibold">Форма для уточнения</h2>
                 <div class="grid md:grid-cols-3 gap-6 font-serif mt-10">

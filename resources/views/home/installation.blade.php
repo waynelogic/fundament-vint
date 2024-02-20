@@ -18,16 +18,7 @@
 
 <section class="">
     <div class="container">
-        <div class="flex flex-col mb-4">
-            <div class="h-1 bg-gray-200 rounded overflow-hidden mb-4">
-                <div class="w-24 h-full bg-blue-500"></div>
-            </div>
-            <div>
-{{--                <h3 class="text-sm title-font text-gray-500 tracking-widest">Услуги по монтажу</h3>--}}
-                <h2 class="text-lg lg:text-3xl font-serif font-semibold mb-4">Cобственная профессиональная техника</h2>
-                <p>Монтаж винтовых свай выполняем собственной профессиональной техникой</p>
-            </div>
-        </div>
+        <x-heading divide="true" title="Cобственная профессиональная техника" text="Монтаж винтовых свай выполняем собственной профессиональной техникой"/>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             @foreach($arInstallation as $obItem)
@@ -37,7 +28,7 @@
                         <div class="p-6">
 {{--                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>--}}
                             <h1 class="title-font text-lg font-bold mb-3">{{ $obItem->title }}</h1>
-                            <p class="leading-relaxed mb-3">{{ $obItem->text }}</p>
+                            <p class="leading-relaxed">{{ $obItem->text }}</p>
 {{--                            <div class="flex items-center flex-wrap ">--}}
 {{--                                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">--}}
 {{--                                    Learn More--}}

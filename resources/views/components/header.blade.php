@@ -2,7 +2,7 @@
     <div class="absolute inset-0 bg-black/40 backdrop-blur-[20px] backdrop-saturate-[180%] shadow-lg z-[-1] opacity-0 duration-300 group-[.styled]:opacity-100"></div>
     <div class="container text-white flex max-lg:flex-wrap items-center justify-between py-2">
         <img width="100px" src="https://vint-fundament.ru/assets/images/logo-white.png" alt="">
-        <nav class="max-lg:grid max-lg:grid-rows-[0fr] group-[.menu-opened]:grid-rows-[1fr] max-lg:order-last max-lg:w-full duration-300">
+        <nav class="ml-4 max-lg:grid max-lg:grid-rows-[0fr] group-[.menu-opened]:grid-rows-[1fr] max-lg:order-last max-lg:w-full duration-300">
             <div class="overflow-hidden">
                 @if(isset($headerNavbar))
                     <ul class="flex items-center text-sm max-lg:flex-col max-lg:space-y-1 max-lg:mt-4 max-lg:mb-2 lg:space-x-4">

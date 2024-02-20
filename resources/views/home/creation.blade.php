@@ -1,7 +1,52 @@
+@php($arUsage = [
+    (object) [
+        'title' => 'Строительство мостов, пирсов, причалов',
+        'image' => 'images/usage/primenenie-3.jpg'
+    ],
+    (object) [
+        'title' => 'Возведение входных групп, крылец, пристроек',
+        'image' => 'images/usage/primenenie-2.jpg'
+    ],
+    (object) [
+        'title' => 'Фундаменты под частное коттеджное строительство',
+        'image' => 'images/usage/primenenie-1.jpg'
+    ],
+    (object) [
+        'title' => 'Усиление и восстановление фундаментов',
+        'image' => 'images/usage/primenenie-4.jpg'
+    ],
+
+    (object) [
+        'title' => 'Монтаж заборов и ограждений',
+        'image' => 'images/usage/primenenie-10.jpg'
+    ],
+    (object) [
+        'title' => 'Установка опор под столбы',
+        'image' => 'images/usage/primenenie-9.jpg'
+    ],
+    (object) [
+        'title' => 'Установка рекламных щитов',
+        'image' => 'images/usage/primenenie-8.jpg'
+    ],
+
+
+    (object) [
+        'title' => 'ЕУЫЕ',
+        'image' => 'images/usage/primenenie-5.jpg'
+    ],
+    (object) [
+        'title' => 'ЕУЫЕ',
+        'image' => 'images/usage/primenenie-6.jpg'
+    ],
+    (object) [
+        'title' => 'ЕУЫЕ',
+        'image' => 'images/usage/primenenie-7.jpg'
+    ],
+])
+
 <section id="creation">
     <div class="container py-12">
-        <h3 class="text-sm title-font text-gray-500 tracking-widest">Услуги по монтажу</h3>
-        <h2 class="text-3xl font-serif font-semibold mb-6">Производство и установка винтовых свай</h2>
+        <x-heading divide="true" title="Производство и установка винтовых свай" subtitle="Услуги по монтажу"/>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div class="w-full">
                 <div x-data="{ activeTab: 1 }">
@@ -12,7 +57,7 @@
                                 class="[&.active]:text-blue-600 [&.active]:border-blue-600">Установка</button>
                     </div>
                     <div :class="{ 'hidden': activeTab !== 1 }">
-                        <p class="leading-relaxed mb-4">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam inxigo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean.</p>
+                        <p class="leading-relaxed mb-4">Мы являемся экспертами в производстве винтовых свай, обеспечивая высококачественные решения для фундаментов.</p>
                         <div class="flex border-t border-gray-200 py-2">
                             <span class="text-gray-500">Несущая спрособность</span>
                             <span class="ml-auto text-gray-900">1 - 2 т.</span>
@@ -38,49 +83,30 @@
                 </div>
             </div>
             <div class="">
+                <div class="swiper mySwiper" data-lazy="usageSlider">
+                    <div class="swiper-wrapper">
+                        @foreach($arUsage as $obItem)
+                            <div class="swiper-slide">
+                                <div class="group">
+                                    <img
+                                        alt="Lava"
+                                        src="{{ $obItem->image }}"
+                                        class="h-40 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+                                    />
 
-{{--                <div class="swiper" data-lazy="usageSlider">--}}
-{{--                    <!-- Additional required wrapper -->--}}
-{{--                    <div class="swiper-wrapper">--}}
-{{--                        <!-- Slides -->--}}
-{{--                        <div class="swiper-slide">Slide 1</div>--}}
-{{--                        <div class="swiper-slide">Slide 2</div>--}}
-{{--                        <div class="swiper-slide">Slide 3</div>--}}
-{{--                        <div class="swiper-slide">Slide 3</div>--}}
-{{--                        <div class="swiper-slide">Slide 3</div>--}}
-{{--                        <div class="swiper-slide">Slide 3</div>--}}
-{{--                        ...--}}
-{{--                    </div>--}}
-{{--                    <!-- If we need pagination -->--}}
-{{--                    <div class="swiper-pagination"></div>--}}
-
-{{--                    <!-- If we need navigation buttons -->--}}
-{{--                    <div class="swiper-button-prev"></div>--}}
-{{--                    <div class="swiper-button-next"></div>--}}
-{{--                </div>--}}
-
-                <div class="grid lg:grid-cols-2 gap-4">
-                    @for ($i = 1; $i <= 4; $i++)
-                        <div class="group">
-                            <div class="group">
-                                <img
-                                    alt="Lava"
-                                    src="https://vint-fundament.ru/assets/images/primenenie-{{ $i }}.jpg"
-                                    class="h-40 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
-                                />
-
-                                <div class="p-4">
-                                    <a href="#">
-                                        <h3 class="text-base font-serif font-medium text-gray-900">
-                                            Строительство мостов, пирсов, причалов
-                                        </h3>
-                                    </a>
+                                    <div class="p-4 pb-0">
+                                        <a href="#">
+                                            <h3 class="text-sm font-serif font-medium text-gray-900">{{ $obItem->title }}</h3>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    @endfor
+                        @endforeach
+                    </div>
+{{--                    <div class="swiper-button-prev">+</div>--}}
+{{--                    <div class="swiper-button-next">+</div>--}}
+                    <div class="swiper-pagination mt-4"></div>
                 </div>
-
             </div>
         </div>
     </div>

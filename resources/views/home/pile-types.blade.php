@@ -22,9 +22,8 @@
 ])
 
 <section class="types">
-    <div class="container py-12">
-        <h2 class="text-3xl font-serif font-semibold mb-6">Виды свай</h2>
-
+    <div class="container pb-12">
+        <x-heading divide="true" title="Виды свай" subtitle="Сваи которые мы производим"/>
         <div class="flex border-2 rounded-lg mb-4" data-lazy="accordion">
             <div class="max-md:hidden border-r-2">
                 <div class="min-w-[150px] flex flex-col shrink-0">

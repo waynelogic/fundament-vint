@@ -1,10 +1,6 @@
 <section class="portfolio">
     <div class="container py-12">
-        <div class="flex justify-between items-center mb-2">
-            <h2 class="text-3xl font-serif font-semibold">Наши работы</h2>
-            <a href="" class="font-serif font-semibold text-blue-500">Посмотреть все</a>
-        </div>
-        <p class="mb-4">Наши работы, это без пиздежа - лучшее творение человечества! Так что бери и не выёбывайся!</p>
+        <x-heading divide="true" title="Наши работы" linkText="Посмотреть все" link="/" text="От замысла до воплощения: гордимся представить наши завершенные проекты!"/>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             @for ($i = 1; $i <= 3; $i++)
                 <a href="#" class="group bg-white rounded-2xl overflow-hidden shadow">

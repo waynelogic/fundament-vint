@@ -11,7 +11,6 @@ class LivePages extends Component
 
     public object $content;
 
-
     public function render()
     {
         $url = request()->path();
